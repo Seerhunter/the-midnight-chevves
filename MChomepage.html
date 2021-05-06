@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:title" content="Midnight Chevves">
+  <meta name="og:type" content="website">
+  <title>Midnight Chevves - Homepage</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="css-files/root-background.css">
+  <link rel="stylesheet" href="css-files/parallax.css">
+  <link rel="stylesheet" href="css-files/navigation-bar.css">
+  <link rel="stylesheet" href="css-files/cards.css">
+  <link rel="stylesheet" href="css-files/anims.css">
+  <link rel="stylesheet" href="css-files/buttons.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav nav links">
+        <li>
+          <a class="navbar-brand" href="#top">
+            <div class="logo-image">
+              <img src="logo no words circle.png" class="img-fluid">
+            </div>
+          </a>
+        </li>
+        <li class="nav links">
+          <h6 class="button-text">
+            <a class="text-light alt-line" href="./MCcakegallery.html">Cake Gallery</a>
+          </h6>
+        </li>
+        <li class="nav links">
+          <h6 class="button-text">
+            <a class="text-light alt-line" href="./MCmenu.html">Menu</a>
+          </h6>
+        </li>
+        <li class="nav links">
+          <h6 class="button-text">
+            <a class="text-light alt-line" href="./MCcontactus.html">Contact Us</a>
+          </h6>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="landing-page">
+      <a name="top"></a>
+      <div class="logo-center">
+        <img src="logo words circle.png" class="fade-in delay-animation">
+      </div>
+      <h1 class="noselect fade-in"><b>Welcome!</b></h1>
+      <h6 class="noselect fade-in delay-animation" style="--delay: 1s;"><i>Just a little slice of the midnight life.</i>
+      </h6>
+      <span id="quote">
+        <blockquote class="fade-in delay-animation" style="--delay: 2s;">It's hard to say that I'd rather stay awake
+          when I'm asleep.</blockquote>
+        <span class="fade-in delay-animation reverse" style="--delay: 3s;">- <a
+            href="https://www.youtube.com/watch?v=psuRGfAaju4">Owl City</a></span>
+      </span>
+      <span id="quote">
+        <blockquote class="fade-in delay-animation" style="--delay: 3s;">Your nightly sweet cravings, all in a cake can!
+        </blockquote>
+      </span>
+    </section>
+
+    <section>
+      <h3>Who are we?</h3>
+      <br>
+      <h6>We are a small business that delivers reimagined cakes that will for sure make even night owls crave for more.
+      </h6>
+      <br>
+      <p>
+        Want a preview? See for yourself!
+      </p>
+      <div id="card-grid">
+        <div class="media-card">
+          <video controls>
+            <source src = "Midnight Chevves Cake Pics/f9a51aa5d25145b6bac21de7c806e097.MOV" type="video/mp4">
+          </video>
+          <div class="media-content">
+            <h6>Valentines Sneak Peak</a></h6>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <video controls>
+            <source src = "Midnight Chevves Cake Pics/IMG_9333.MOV" type="video/mp4">
+          </video>
+          <div class="media-content">
+            <h6>Four Types Sneak Peak</a></h6>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <video controls>
+            <source src = "Midnight Chevves Cake Pics/e996e8715c3644df915c7ebe3e8ee865.MOV" type="video/mp4">
+          </video>
+          <div class="media-content">
+            <h6>Chocolate Sneak Peak</a></h6>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <h3>Owners? Night owls?</u></h3>
+      <br>
+      <h6>
+        <i>We may be night owls, but one thing's for sure, we whip up some great tasting cakes!</i>
+      </h6>
+
+      <div id="card-grid">
+        <div class="media-card">
+          <img src="erika.jpg" alt="Erika">
+          <div class="media-content">
+            <h6><a href="https://www.facebook.com/erika.rillo">Erika Rillo</a></h6>
+            <span>Sister-in-crime &
+              <strong><i>Chef</i></strong>
+            </span>
+          </div>
+        </div>
+
+        <div id="card-grid">
+          <div class="media-card">
+            <img src="bro n sis.jpg" alt="Chefs-in-crime">
+            <div class="media-content">
+              <h6>Midnight chefs in crime</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <img src="jerico.jpg" alt="Jerico">
+          <div class="media-content">
+            <h6><a href="https://www.facebook.com/Rillo.031902">Jerico Rillo</a></h6>
+            <span>Brother-in-crime &
+              <strong><i>Chef</i></strong>
+            </span>
+          </div>
+        </div>
+    </section>
+  </main>
+</body>
+
+<!-- Landing page  -->
+<style>
+  @media screen and (max-width: 900px) {
+    #landing-page {
+      min-height: 10rem;
+    }
+  }
+
+  #landing-page {
+    box-sizing: content-box;
+    padding-bottom: calc(43.25% - var(--nav-size) + var(--scrollbar-size));
+    padding-top: 5%;
+    width: 100%;
+    height: 0;
+  }
+
+  #landing-page:after {
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    padding: inherit;
+    min-height: inherit;
+    background-image: url("starrynight.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  #landing-page h1 {
+    padding-bottom: 1rem;
+  }
+
+  #quote {
+    display: block;
+    position: relative;
+    width: max-content;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  #quote span {
+    float: left;
+  }
+
+  .background {
+    position: absolute;
+    z-index: -10;
+    top: var(--nav-size);
+    left: 0;
+  }
+
+  .light {
+    opacity: 0.1;
+  }
+
+  .logo-center {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -6px;
+    place-self: center;
+    position: relative;
+  }
+</style>
+
+<!--Tablestyle-->
+<style>
+  h3 {
+    margin-top: 5rem;
+  }
+
+  table {
+    margin-top: 3rem;
+    table-layout: fixed;
+    place-self: center;
+    width: 75%;
+    max-width: 40rem;
+    --row-color: 255, 255, 255;
+    --table-border: 1px solid rgba(230, 66, 66, 0.15);
+    border: var(--table-border);
+    border-bottom: 0;
+  }
+
+
+  tr {
+    height: 3rem;
+    background-color: rgba(var(--row-color), 0.04);
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgba(var(--row-color), 0.055);
+  }
+
+  tr,
+  th,
+  td {
+    border: 0;
+    border-bottom: var(--table-border);
+  }
+
+  td p {
+    width: 50%;
+    margin: auto;
+  }
+</style>
+
+
+<!--Card Grid-->
+<style>
+  #card-grid {
+    width: 80%;
+    display: grid;
+    place-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(min-content, max-content);
+    justify-items: center;
+    margin: 4rem;
+    gap: 1rem;
+  }
+
+  .media-card {
+    backface-visibility: hidden;
+    page-break-inside: avoid;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #card-grid {
+      columns: 3;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #card-grid {
+      columns: 2;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    #card-grid {
+      columns: 1;
+      margin: 2rem 1rem;
+    }
+  }
+</style>
+
+</html>

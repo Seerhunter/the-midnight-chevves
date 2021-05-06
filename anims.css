@@ -1,0 +1,29 @@
+.fade-in {
+    animation: splash 1s normal forwards ease-in-out;
+    --direction: 1;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .delay-animation {
+    visibility: hidden;
+    animation-delay: var(--delay);
+    -moz-animation-delay: var(--delay);
+    -webkit-animation-delay: var(--delay);
+  }
+  
+  .reverse {
+    --direction: -1;
+  }
+  
+  @keyframes splash {
+    from {
+      opacity: 0;
+      transform: translateX(calc(15% * var(--direction)));
+    }
+    to {
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
